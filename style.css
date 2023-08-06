@@ -10,8 +10,12 @@ html {
 }
 
 #calculator {
+    border: 2px solid black;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
+    background-color: gainsboro;
+    padding: 10px;
 }
 
 #button-container {
@@ -20,7 +24,6 @@ html {
     gap: 0;
     width: 300px;
     height: fit-content;
-    border: 2px solid green;
     border-radius: 20px;
 }
 
@@ -28,12 +31,20 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: max-content;
+    height: 100px;
+    width: 100%;
+    padding-bottom: 10px;
 }
 #display {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 30px;
+    border-radius: 2px;
+    font-size: 30px;
+    flex: 1;
+    align-self: stretch;
     background-color: grey;
-    flex-grow: 1;
     
 }
 
@@ -53,6 +64,8 @@ button {
     /*margin: 4px; */
     
     display: flex;
+    height: 50px;
+    font-size: 30px;
     justify-content: center;
     border-radius: 10px;
     align-items: center;
